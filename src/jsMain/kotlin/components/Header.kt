@@ -3,31 +3,32 @@ package components
 import data.Strings
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.dom.*
+import style.StyleCSS
 
 @Composable
 fun Header() {
     Header {
-        Div(attrs = { classes("headerColumnWrapContent") }) {
+        Div(attrs = { classes(StyleCSS.HeaderColumnWrapContent) }) {
             A(href = "/") {
                 Img("/public/img/logo-white.png")
             }
         }
-        Div(attrs = { classes("headerColumnMenu") }) {
-            MenuButton("/", Strings.home)
-            MenuButton("/patreon", Strings.patreon)
-            MenuButton("/volunteer", Strings.volunteer)
-            MenuButton("https://derpcompany.teemill.com/", Strings.shop, true)
+        Div(attrs = { classes(StyleCSS.HeaderColumn) }) {
+            HeaderButton("/", Strings.home)
+            HeaderButton("/patreon", Strings.patreon)
+            HeaderButton("/volunteer", Strings.volunteer)
+            HeaderButton("https://derpcompany.teemill.com/", Strings.shop, true)
         }
     }
 }
 
 @Composable
-private fun MenuButton(
+private fun HeaderButton(
     href: String,
     text: String,
     newTab: Boolean = false,
 ) {
-    Button(attrs = { classes("pagesLink") }) {
+    Button(attrs = { classes(StyleCSS.HeaderButton) }) {
         H3 {
             A(
                 href = href,

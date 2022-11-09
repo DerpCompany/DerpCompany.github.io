@@ -4,18 +4,22 @@ import components.Footer
 import components.Header
 import data.Strings
 import androidx.compose.runtime.Composable
+import data.Ids
 import org.jetbrains.compose.web.dom.*
+import style.StyleCSS
+import org.jetbrains.compose.web.css.Style
 
 @Composable
 fun EventsPage() {
+    Style(StyleCSS)
     Header()
-    Div(attrs = { id("container") }) {
-        Div(attrs = { id("content") }) {
+    Div(attrs = { id(Ids.container) }) {
+        Div(attrs = { id(Ids.content) }) {
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundGameSeasonalEvents", "backgroundImageRight", "alignCenter",
-                "justifySpaceAround",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageSeasonalEvents1, StyleCSS.BackgroundImageRight, StyleCSS.AlignCenter,
+                StyleCSS.JustifySpaceAround,
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.events_one_title)
                     }
@@ -23,14 +27,14 @@ fun EventsPage() {
                         Text(Strings.events_one_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnHalf") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf) }) {
                 }
             }
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundGameHalo", "backgroundImageRight", "alignCenter",
-                "justifySpaceAround",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageHalo, StyleCSS.BackgroundImageRight, StyleCSS.AlignCenter,
+                StyleCSS.JustifySpaceAround,
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.events_two_title)
                     }
@@ -38,14 +42,14 @@ fun EventsPage() {
                         Text(Strings.events_two_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnHalf") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf) }) {
                 }
             }
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundGamePartyAnimals", "backgroundImageLeft", "alignCenter",
-                "justifySpaceAround", "sectionAlignEnd",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImagePartyAnimals, StyleCSS.BackgroundImageLeft, StyleCSS.AlignCenter,
+                StyleCSS.JustifySpaceAround, StyleCSS.SectionAlignEnd,
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.events_three_title)
                     }
@@ -53,14 +57,14 @@ fun EventsPage() {
                         Text(Strings.events_three_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnHalf") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf) }) {
                 }
             }
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundGameDBD", "backgroundImageRight", "alignCenter",
-                "justifySpaceAround",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageDeadByDeadlight, StyleCSS.BackgroundImageRight, StyleCSS.AlignCenter,
+                StyleCSS.JustifySpaceAround,
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.events_four_title)
                     }
@@ -68,14 +72,14 @@ fun EventsPage() {
                         Text(Strings.events_four_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnHalf") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf) }) {
                 }
             }
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundGameDerpmas", "backgroundImageLeft", "alignCenter",
-                "justifySpaceAround", "sectionAlignEnd"
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageDerpmas, StyleCSS.BackgroundImageLeft, StyleCSS.AlignCenter,
+                StyleCSS.JustifySpaceAround, StyleCSS.SectionAlignEnd
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.events_five_title)
                     }
@@ -83,7 +87,7 @@ fun EventsPage() {
                         Text(Strings.events_five_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnHalf") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf) }) {
                 }
             }
         }

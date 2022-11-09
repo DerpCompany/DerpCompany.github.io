@@ -5,7 +5,7 @@ fun main() {
 
     route(
         content = { HomePage() },
-        pageNotFoundContent = { },
+        pageNotFoundContent = { HomePage() },
     ) {
         route(
             path = "patreon",

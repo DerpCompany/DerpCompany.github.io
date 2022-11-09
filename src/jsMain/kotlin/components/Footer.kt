@@ -3,16 +3,17 @@ package components
 import data.Strings
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.dom.*
+import style.StyleCSS
 
 @Composable
 fun Footer() {
     Footer {
-        Div(attrs = { classes("footerColumn") }) {
+        Div(attrs = { classes(StyleCSS.FooterColumn) }) {
             A(href = "/") {
                 Img("/public/img/logo.png")
             }
         }
-        Div(attrs = { classes("footerColumn") }) {
+        Div(attrs = { classes(StyleCSS.FooterColumn) }) {
             H1 {
                 Text(Strings.get_connected)
             }

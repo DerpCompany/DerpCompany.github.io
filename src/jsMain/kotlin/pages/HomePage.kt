@@ -7,16 +7,18 @@ import data.Ids
 import data.Strings
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.dom.*
+import style.StyleCSS
 
 @Composable
 fun HomePage() {
+    org.jetbrains.compose.web.css.Style(StyleCSS)
     Header()
     Div {
         Div(attrs = {
-            id("backgroundVideoContainer")
+            id(Ids.backgroundVideoContainer)
         }) {
             Video(attrs = {
-                id("backgroundVideo")
+                id(Ids.backgroundVideo)
             }) {
                 Source(attrs = {
                     attr("src", "/public/video/banner-video.mp4")
@@ -24,126 +26,129 @@ fun HomePage() {
                 }) { }
             }
             Div(attrs = {
-                id("videoHeader")
+                id(Ids.videoHeaderContainer)
             }) {
                 Img(
                     src = "/public/img/logo-splash.webp",
                     attrs = {
-                        classes("headervidlink")
+                        id(Ids.videoHeader)
                     },
                 )
             }
         }
-        Div(attrs = { classes("heightLarge") }) { }
-        Div(attrs = { classes("sectionTriButton") }) {
-            Button(attrs = { classes("triButton", "tintDark",  "triButtonBackground1", "triButtonHighlight1") }) {
+        Div(attrs = { classes(StyleCSS.HeightLarge) }) { }
+        Div(attrs = { classes(StyleCSS.SectionTriButton) }) {
+            Button(attrs = { classes(StyleCSS.TriButton, StyleCSS.TriButtonBackgroundMain, StyleCSS.TriButtonHighlightMain) }) {
                 A(
-                    href = "/sustainability"
+                    href = "/sustainability",
+                    attrs = { classes(StyleCSS.TriButtonHighlightMain) }
                 ) {
                     Text(Strings.sustainability)
                 }
             }
-            Button(attrs = { classes("triButton", "tintDark",  "triButtonBackground2", "triButtonHighlight2") }) {
+            Button(attrs = { classes(StyleCSS.TriButton, StyleCSS.TriButtonBackgroundAlternative, StyleCSS.TriButtonHighlightAlternative) }) {
                 A(
-                    href = "/events"
+                    href = "/events",
+                    attrs = { classes(StyleCSS.TriButtonHighlightAlternative) }
                 ) {
                     Text(Strings.events)
                 }
             }
-            Button(attrs = { classes("triButton", "tintDark",  "triButtonBackground1", "triButtonHighlight1") }) {
+            Button(attrs = { classes(StyleCSS.TriButton, StyleCSS.TriButtonBackgroundMain, StyleCSS.TriButtonHighlightMain) }) {
                 A(
-                    href = "/social"
+                    href = "/social",
+                    attrs = { classes(StyleCSS.TriButtonHighlightMain) }
                 ) {
                     Text(Strings.social_grups)
                 }
             }
         }
-        Div(attrs = { classes("heightXLarge") }) { }
-        Div(attrs = { classes("maxWidthContent", "horizontalPaddingMediun") }) {
+        Div(attrs = { classes(StyleCSS.HeightXLarge) }) { }
+        Div(attrs = { classes(StyleCSS.MaxWidthContent, StyleCSS.HorizontalPaddingMediun) }) {
             Div {
                 H2 {
                     Text(Strings.something_for_everyone)
                 }
             }
         }
-        Div(attrs = { classes("sectionGameRow") }) {
-            Div(attrs = { classes("sectionGameInnerRow") }) {
+        Div(attrs = { classes(StyleCSS.GameCarouselHolder) }) {
+            Div(attrs = { classes(StyleCSS.GameCarouselInnerHolder) }) {
                 repeat(GameBanners.repeat) {
                     GameBanners.assets.forEach {
                         Img(
                             src = "public/img/${it}",
                             attrs = {
-                                classes("gameCatalogItem")
+                                classes(StyleCSS.GameCarouselItem)
                             }
                         )
                     }
                 }
             }
         }
-        Div(attrs = { classes("heightXXLarge") }) { }
-        Div(attrs = { id("container") }) {
-            Div(attrs = { id("content") }) {
+        Div(attrs = { classes(StyleCSS.HeightXXLarge) }) { }
+        Div(attrs = { id(Ids.container) }) {
+            Div(attrs = { id(Ids.content) }) {
                 Div(attrs = { classes(
-                    "section", "hideTopBorder", "backgroundGame1", "backgroundImageCenter", "sectionBorderTop",
-                    "sectionBorderBottom", "sectionAlignEnd", "alignCenter", "justifySpaceAround"
+                    StyleCSS.Section, StyleCSS.ImageVikingDragon, StyleCSS.BackgroundImageCenter, StyleCSS.BorderTop,
+                    StyleCSS.BorderBottom, StyleCSS.SectionAlignEnd, StyleCSS.AlignCenter, StyleCSS.JustifySpaceAround
                 ) }) {
-                    Div(attrs = { classes("sectionColumnMain", "tintDark", "shadow") }) {
+                    Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
                         H2 {
                             Text(Strings.section_one_title)
                         }
-                        P(attrs = { classes("bold") }) {
+                        P(attrs = { classes(StyleCSS.Bold) }) {
                             Text(Strings.section_one_description)
                         }
-                        Div(attrs = { classes("flexAlignCenter") }) {
-                            Button(attrs = { classes("navButton") }) {
+                        Div(attrs = { classes(StyleCSS.FlexAlignCenter) }) {
+                            Button(attrs = { classes(StyleCSS.NavigationButton) }) {
                                 A(href = "/join") {
                                     Text(Strings.section_one_action)
                                 }
                             }
                         }
                     }
-                    Div(attrs = { classes("sectionColumnSub") }) { }
+                    Div(attrs = { classes(StyleCSS.SectionColumnSub) }) { }
                 }
                 Div(attrs = { classes(
-                    "section", "hideTopBorder", "backgroundGame2", "backgroundImageRight", "sectionBorderTop",
-                    "sectionBorderBottom", "sectionAlignStart", "alignCenter", "justifySpaceAround"
+                    StyleCSS.Section, StyleCSS.ImageVanuParty, StyleCSS.BackgroundImageRight, StyleCSS.BorderTop,
+                    StyleCSS.BorderBottom, StyleCSS.SectionAlignStart, StyleCSS.AlignCenter, StyleCSS.JustifySpaceAround
                 ) }) {
-                    Div(attrs = { classes("sectionColumnMain", "tintDark", "shadow") }) {
+                    Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
                         H2 {
                             Text(Strings.section_two_title)
                         }
-                        P(attrs = { classes("bold") }) {
+                        P(attrs = { classes(StyleCSS.Bold) }) {
                             Text(Strings.section_two_description)
                         }
                     }
-                    Div(attrs = { classes("sectionColumnSub") }) { }
+                    Div(attrs = { classes(StyleCSS.SectionColumnSub) }) { }
                 }
                 Div(attrs = { classes(
-                    "section", "hideTopBorder", "backgroundGame3", "backgroundImageLeft", "sectionBorderTop",
-                    "sectionBorderBottom", "sectionAlignEnd", "alignCenter", "justifySpaceAround"
+                    StyleCSS.Section, StyleCSS.ImageRainbowSixSiege, StyleCSS.BackgroundImageLeft, StyleCSS.BorderTop,
+                    StyleCSS.BorderBottom, StyleCSS.SectionAlignEnd, StyleCSS.AlignCenter, StyleCSS.JustifySpaceAround
                 ) }) {
-                    Div(attrs = { classes("sectionColumnMain", "tintDark", "shadow") }) {
+                    Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
                         H2 {
                             Text(Strings.section_three_title)
                         }
-                        P(attrs = { classes("bold") }) {
+                        P(attrs = { classes(StyleCSS.Bold) }) {
                             Text(Strings.section_three_description)
                         }
-                        Div(attrs = { classes("flexAlignCenter") }) {
-                            Button(attrs = { classes("navButton") }) {
+                        Div(attrs = { classes(StyleCSS.FlexAlignCenter) }) {
+                            Button(attrs = { classes(StyleCSS.NavigationButton) }) {
                                 A(href = "/join") {
                                     Text(Strings.section_three_action)
                                 }
                             }
                         }
                     }
-                    Div(attrs = { classes("sectionColumnSub") }) { }
+                    Div(attrs = { classes(StyleCSS.SectionColumnSub) }) { }
                 }
                 Div(attrs = { classes(
-                    "section", "hideTopBorder", "backgroundDiscord", "backgroundImageCenter", "sectionBorderTop",
-                    "alignCenter", "justifyCenter"
+                    StyleCSS.Section, StyleCSS.ImageDiscord, StyleCSS.BackgroundImageCenter, StyleCSS.BorderTop,
+                    StyleCSS.AlignCenter, StyleCSS.JustifyCenter
                 ) }) {
-                    Div(attrs = { classes("sectionColumnMain") }) {
+                    Div(attrs = { classes(StyleCSS.SectionColumnMain) }) {
                         Iframe(attrs = {
                             id(Ids.discordEmbed)
                             attr("src", "https://discord.com/widget?id=154310693171101697&theme=dark")
@@ -152,8 +157,8 @@ fun HomePage() {
                             attr("sandbox", "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts")
                         })
                     }
-                    Div(attrs = { classes("sectionColumnSub") }) {
-                        Button(attrs = { classes("navButton") }) {
+                    Div(attrs = { classes(StyleCSS.SectionColumnSub) }) {
+                        Button(attrs = { classes(StyleCSS.NavigationButton) }) {
                             A(href = "http://discord.derpcompany.com/") {
                                 Text(Strings.join_discord)
                             }

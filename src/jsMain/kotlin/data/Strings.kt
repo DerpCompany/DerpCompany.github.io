@@ -23,7 +23,7 @@ object Strings {
     const val section_two_description = "Derp Company is about connecting adult (18+) gamers to create fun team-based gameplay experiences. We make it easier to jump in, socialize, and play with people who care about a positive group experience in any game.\n\nFounded in 2012 in the game Planetside 2, Derp Company has grown into a multi-gaming PC community bringing cooperative experiences throughout the titles we play. We are a home for passionate people who value our mission—empowering an open, fun, PC gaming environment that inspires team play."
 
     const val section_three_title = "Become A Member"
-    const val section_three_description = "Our membership is important to us, so we've packed it full of amazing perks and benefits.\n\n•  Earn points each time you play in quarterly events\n\n•  Ability to create custom temporary game channels\n\n•  Unlock joining our Social Groups\n\n•  Exclusive member-only giveaway raffles\n\n•  Access to our 18+ #nsfw-forum in Discord"
+    const val section_three_description = "Our membership is important to us, so we've packed it full of amazing perks and benefits.\n\n•  Earn points each time you play in quarterly events\n\n•  Ability to create custom temporary game channels\n\n•  Unlock joining our Social Groups\n\n•  Exclusive member-only giveaway raffles\n\n•  Access to our 18+ #nsfw-forum in Discord\n\n"
     const val section_three_action = "SIGN ME UP"
 
     const val volunteer_one_title = "We'd love to work with someone like you!"

@@ -4,18 +4,21 @@ import components.Footer
 import components.Header
 import data.Strings
 import androidx.compose.runtime.Composable
+import data.Ids
 import org.jetbrains.compose.web.dom.*
+import style.StyleCSS
 
 @Composable
 fun SocialPage() {
+    org.jetbrains.compose.web.css.Style(StyleCSS)
     Header()
-    Div(attrs = { id("container") }) {
-        Div(attrs = { id("content") }) {
+    Div(attrs = { id(Ids.container) }) {
+        Div(attrs = { id(Ids.content) }) {
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundMoreThanGaming", "backgroundImageCenter", "tintDark", "alignCenter",
-                "justifyCenter",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageMoreThanGaming, StyleCSS.BackgroundImageCenter, StyleCSS.tintDark, StyleCSS.AlignCenter,
+                StyleCSS.JustifyCenter,
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.social_one_title)
                     }
@@ -23,18 +26,18 @@ fun SocialPage() {
                         Text(Strings.social_one_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnHalf") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf) }) {
                 }
             }
 
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundFilmClub", "backgroundImageCenter", "tintVeryDark", "alignCenter",
-                "justifyCenter",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageFilmClub, StyleCSS.BackgroundImageCenter, StyleCSS.tintVeryDark, StyleCSS.AlignCenter,
+                StyleCSS.JustifyCenter,
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "centerFlex") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.CenterFlex) }) {
                     Img(src = "/public/img/film_club_2021.webp")
                 }
-                Div(attrs = { classes("sectionColumnHalf") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf) }) {
                     H2 {
                         Text(Strings.social_two_title)
                     }
@@ -45,13 +48,13 @@ fun SocialPage() {
             }
 
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundAnimeClub", "backgroundImageCenter", "tintDark", "alignCenter",
-                "justifyCenter", "sectionAlignEnd"
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageAnimeClub, StyleCSS.BackgroundImageCenter, StyleCSS.tintDark, StyleCSS.AlignCenter,
+                StyleCSS.JustifyCenter, StyleCSS.SectionAlignEnd
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "centerFlex") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.CenterFlex) }) {
                     Img(src = "/public/img/anime_club_2021.webp")
                 }
-                Div(attrs = { classes("sectionColumnHalf", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.social_three_title)
                     }
@@ -62,13 +65,13 @@ fun SocialPage() {
             }
 
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundBookClub", "backgroundImageCenter", "tintDark", "alignCenter",
-                "justifyCenter",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageBookClub, StyleCSS.BackgroundImageCenter, StyleCSS.tintDark, StyleCSS.AlignCenter,
+                StyleCSS.JustifyCenter,
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "centerFlex") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.CenterFlex) }) {
                     Img(src = "/public/img/book_club_2021.webp")
                 }
-                Div(attrs = { classes("sectionColumnHalf", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.social_four_title)
                     }
@@ -79,13 +82,13 @@ fun SocialPage() {
             }
 
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundF1Club", "backgroundImageCenter", "tintDark", "alignCenter",
-                "justifyCenter",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageF1Club, StyleCSS.BackgroundImageCenter, StyleCSS.tintDark, StyleCSS.AlignCenter,
+                StyleCSS.JustifyCenter,
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "centerFlex") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.CenterFlex) }) {
                     Img(src = "/public/img/f1_club_2022.webp")
                 }
-                Div(attrs = { classes("sectionColumnHalf", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.social_five_title)
                     }

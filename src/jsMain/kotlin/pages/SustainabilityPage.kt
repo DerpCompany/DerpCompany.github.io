@@ -4,18 +4,21 @@ import components.Footer
 import components.Header
 import data.Strings
 import androidx.compose.runtime.Composable
+import data.Ids
 import org.jetbrains.compose.web.dom.*
+import style.StyleCSS
 
 @Composable
 fun SustainabilityPage() {
+    org.jetbrains.compose.web.css.Style(StyleCSS)
     Header()
-    Div(attrs = { id("container") }) {
-        Div(attrs = { id("content") }) {
+    Div(attrs = { id(Ids.container) }) {
+        Div(attrs = { id(Ids.content) }) {
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundSustainability", "backgroundImageCenter", "alignCenter",
-                "justifyCenter",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageTombRaider, StyleCSS.BackgroundImageCenter, StyleCSS.AlignCenter,
+                StyleCSS.JustifyCenter,
             ) }) {
-                Div(attrs = { classes("sectionColumnMain", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.sustainability_one_title)
                     }
@@ -23,13 +26,13 @@ fun SustainabilityPage() {
                         Text(Strings.sustainability_one_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnSub") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnSub) }) {
                 }
             }
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "alignCenter", "justifyCenter", "sectionAlignEnd",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.AlignCenter, StyleCSS.JustifyCenter, StyleCSS.SectionAlignEnd,
             ) }) {
-                Div(attrs = { classes("sectionColumnHalf", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.sustainability_two_title)
                     }
@@ -37,13 +40,13 @@ fun SustainabilityPage() {
                         Text(Strings.sustainability_two_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnHalf") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf) }) {
                 }
             }
             Div(attrs = { classes(
-                "section", "alignCenter", "justifyCenter",
+                StyleCSS.Section, StyleCSS.AlignCenter, StyleCSS.JustifyCenter,
             ) }) {
-                Div(attrs = { classes("sectionColumnMain", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.sustainability_three_title)
                     }
@@ -51,9 +54,9 @@ fun SustainabilityPage() {
                         Text(Strings.sustainability_three_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnSub") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnSub) }) {
                     Button(attrs = {
-                        classes("navButton")
+                        classes(StyleCSS.NavigationButton)
                         attr("target", "_blank")
                         attr("rel", "noopener noreferrer")
                     }) {

@@ -4,18 +4,21 @@ import components.Footer
 import components.Header
 import data.Strings
 import androidx.compose.runtime.Composable
+import data.Ids
 import org.jetbrains.compose.web.dom.*
+import style.StyleCSS
 
 @Composable
 fun VolunteerPage() {
+    org.jetbrains.compose.web.css.Style(StyleCSS)
     Header()
-    Div(attrs = { id("container") }) {
-        Div(attrs = { id("content") }) {
+    Div(attrs = { id(Ids.container) }) {
+        Div(attrs = { id(Ids.content) }) {
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundGame5", "backgroundImageCenter", "alignCenter",
-                "justifySpaceAround",
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageBloodHunt, StyleCSS.BackgroundImageCenter, StyleCSS.AlignCenter,
+                StyleCSS.JustifySpaceAround,
             ) }) {
-                Div(attrs = { classes("sectionColumnMain", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.volunteer_one_title)
                     }
@@ -23,23 +26,23 @@ fun VolunteerPage() {
                         Text(Strings.volunteer_one_description)
                     }
                     Div(
-                        attrs = { classes("flexAlignCenter") }
+                        attrs = { classes(StyleCSS.FlexAlignCenter) }
                     ) {
-                        Button(attrs = { classes("navButton") }) {
+                        Button(attrs = { classes(StyleCSS.NavigationButton) }) {
                             A(href = "volunteer-form") {
                                 Text(Strings.volunteer_one_action)
                             }
                         }
                     }
                 }
-                Div(attrs = { classes("sectionColumnSub") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnSub) }) {
                 }
             }
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundGame6", "backgroundImageLeft", "alignCenter",
-                "justifySpaceAround", "sectionAlignEnd"
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageReadyOrNot, StyleCSS.BackgroundImageLeft, StyleCSS.AlignCenter,
+                StyleCSS.JustifySpaceAround, StyleCSS.SectionAlignEnd
             ) }) {
-                Div(attrs = { classes("sectionColumnMain", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.volunteer_two_title)
                     }
@@ -47,13 +50,13 @@ fun VolunteerPage() {
                         Text(Strings.volunteer_two_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnSub") }) { }
+                Div(attrs = { classes(StyleCSS.SectionColumnSub) }) { }
             }
             Div(attrs = { classes(
-                "section", "sectionBorderBottom", "backgroundGame7", "backgroundImageRight", "alignCenter",
-                "justifySpaceAround"
+                StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageOverwatchHeroes2, StyleCSS.BackgroundImageRight, StyleCSS.AlignCenter,
+                StyleCSS.JustifySpaceAround
             ) }) {
-                Div(attrs = { classes("sectionColumnMain", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.volunteer_three_title)
                     }
@@ -61,22 +64,22 @@ fun VolunteerPage() {
                         Text(Strings.volunteer_three_description)
                     }
                     Div(
-                        attrs = { classes("flexAlignCenter") }
+                        attrs = { classes(StyleCSS.FlexAlignCenter) }
                     ) {
-                        Button(attrs = { classes("navButton") }) {
+                        Button(attrs = { classes(StyleCSS.NavigationButton) }) {
                             A(href = "volunteer-form") {
                                 Text(Strings.volunteer_three_action)
                             }
                         }
                     }
                 }
-                Div(attrs = { classes("sectionColumnSub") }) {}
+                Div(attrs = { classes(StyleCSS.SectionColumnSub) }) {}
             }
             Div(attrs = { classes(
-                "section", "backgroundGame8", "backgroundImageLeft", "alignCenter", "justifySpaceAround",
-                "sectionAlignEnd"
+                StyleCSS.Section, StyleCSS.ImageNewWorld, StyleCSS.BackgroundImageLeft, StyleCSS.AlignCenter, StyleCSS.JustifySpaceAround,
+                StyleCSS.SectionAlignEnd
             ) }) {
-                Div(attrs = { classes("sectionColumnMain", "tintDark", "shadow") }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
                     H2 {
                         Text(Strings.volunteer_four_title)
                     }
@@ -84,7 +87,7 @@ fun VolunteerPage() {
                         Text(Strings.volunteer_four_description)
                     }
                 }
-                Div(attrs = { classes("sectionColumnSub") }) {}
+                Div(attrs = { classes(StyleCSS.SectionColumnSub) }) {}
             }
         }
     }

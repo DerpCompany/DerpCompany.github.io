@@ -88,4 +88,13 @@ object Strings {
 
     const val social_five_title = "F1 Club"
     const val social_five_description = "Got a need for speed and don't want to watch races alone? Want to feel like you're part of the most exclusive seats at the track with your favorite snacks, friends, and air-conditioning? It doesn't matter what team you root for, all are welcome in this paddock! Discuss upcoming races, strategies, or just who your favorite driver is!"
+
+    const val rules_title = "The Rules"
+    const val rules_description = "1. Derp Company is a mature gaming community, content is not suitable for persons under the age of 18. Membership will not be granted to minors.\n\n" +
+            "2. Be kind. Respect all users; treat others the way you want to be treated.\n\n" +
+            "3. Be civil. Yelling, hostility, discriminatory language/behavior, disruptive attitudes, or disruptive gameplay are prohibited.\n\n" +
+            "4. Abide by all developer Terms of Service agreements within all games.\n\n" +
+            "5. Follow Discords Terms of Service & Community Guidelines (TOS: https://discord.com/new/terms and Guidelines: https://discord.com/new/guidelines)\n\n" +
+            "\n" +
+            "If you need to submit a ticket to report a member violating the above mentioned rules, it can be done by filling out the Contact Us form."
 }

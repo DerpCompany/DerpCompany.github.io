@@ -8,10 +8,11 @@ import data.Strings
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.dom.*
 import style.StyleCSS
+import org.jetbrains.compose.web.css.Style
 
 @Composable
 fun HomePage() {
-    org.jetbrains.compose.web.css.Style(StyleCSS)
+    Style(StyleCSS)
     Header()
     Div {
         Div(attrs = {
@@ -92,7 +93,7 @@ fun HomePage() {
                     StyleCSS.Section, StyleCSS.ImageVikingDragon, StyleCSS.BackgroundImageCenter, StyleCSS.BorderTop,
                     StyleCSS.BorderBottom, StyleCSS.SectionAlignEnd, StyleCSS.AlignCenter, StyleCSS.JustifySpaceAround
                 ) }) {
-                    Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                    Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                         H2 {
                             Text(Strings.section_one_title)
                         }
@@ -113,7 +114,7 @@ fun HomePage() {
                     StyleCSS.Section, StyleCSS.ImageVanuParty, StyleCSS.BackgroundImageRight, StyleCSS.BorderTop,
                     StyleCSS.BorderBottom, StyleCSS.SectionAlignStart, StyleCSS.AlignCenter, StyleCSS.JustifySpaceAround
                 ) }) {
-                    Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                    Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                         H2 {
                             Text(Strings.section_two_title)
                         }
@@ -127,7 +128,7 @@ fun HomePage() {
                     StyleCSS.Section, StyleCSS.ImageRainbowSixSiege, StyleCSS.BackgroundImageLeft, StyleCSS.BorderTop,
                     StyleCSS.BorderBottom, StyleCSS.SectionAlignEnd, StyleCSS.AlignCenter, StyleCSS.JustifySpaceAround
                 ) }) {
-                    Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                    Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                         H2 {
                             Text(Strings.section_three_title)
                         }

@@ -463,6 +463,12 @@ object StyleCSS : StyleSheet() {
         padding(Constants.size_medium)
     }
 
+    val SectionColumnFullWidth by style {
+        width(100.percent)
+        maxWidth(Constants.horizontal_half)
+        padding(Constants.size_medium)
+    }
+
     val SectionAlignEnd by style {
         flexDirection(FlexDirection.RowReverse)
 
@@ -579,7 +585,7 @@ object StyleCSS : StyleSheet() {
     /**
      * Background tinting
      */
-    val tintDark by style {
+    val TintDark by style {
         backgroundColor(rgba(0, 0, 0, .30))
         backgroundBlendMode("multiply")
 
@@ -590,7 +596,7 @@ object StyleCSS : StyleSheet() {
         }
     }
 
-    val tintVeryDark by style {
+    val TintVeryDark by style {
         backgroundColor(rgba(0,0,0,.60))
         backgroundBlendMode("multiply")
 
@@ -601,7 +607,7 @@ object StyleCSS : StyleSheet() {
         }
     }
 
-    val shadow by style {
+    val Shadow by style {
         property("box-shadow", "0px 0px 50px 50px rgba(0,0,0,0.3")
         borderRadius(25.px)
 

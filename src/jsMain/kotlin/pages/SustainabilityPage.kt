@@ -7,10 +7,11 @@ import androidx.compose.runtime.Composable
 import data.Ids
 import org.jetbrains.compose.web.dom.*
 import style.StyleCSS
+import org.jetbrains.compose.web.css.Style
 
 @Composable
 fun SustainabilityPage() {
-    org.jetbrains.compose.web.css.Style(StyleCSS)
+    Style(StyleCSS)
     Header()
     Div(attrs = { id(Ids.container) }) {
         Div(attrs = { id(Ids.content) }) {
@@ -18,7 +19,7 @@ fun SustainabilityPage() {
                 StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageTombRaider, StyleCSS.BackgroundImageCenter, StyleCSS.AlignCenter,
                 StyleCSS.JustifyCenter,
             ) }) {
-                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                     H2 {
                         Text(Strings.sustainability_one_title)
                     }
@@ -32,7 +33,7 @@ fun SustainabilityPage() {
             Div(attrs = { classes(
                 StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.AlignCenter, StyleCSS.JustifyCenter, StyleCSS.SectionAlignEnd,
             ) }) {
-                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                     H2 {
                         Text(Strings.sustainability_two_title)
                     }
@@ -46,7 +47,7 @@ fun SustainabilityPage() {
             Div(attrs = { classes(
                 StyleCSS.Section, StyleCSS.AlignCenter, StyleCSS.JustifyCenter,
             ) }) {
-                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                     H2 {
                         Text(Strings.sustainability_three_title)
                     }

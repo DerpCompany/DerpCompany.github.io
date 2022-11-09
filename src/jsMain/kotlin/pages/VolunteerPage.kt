@@ -7,10 +7,11 @@ import androidx.compose.runtime.Composable
 import data.Ids
 import org.jetbrains.compose.web.dom.*
 import style.StyleCSS
+import org.jetbrains.compose.web.css.Style
 
 @Composable
 fun VolunteerPage() {
-    org.jetbrains.compose.web.css.Style(StyleCSS)
+    Style(StyleCSS)
     Header()
     Div(attrs = { id(Ids.container) }) {
         Div(attrs = { id(Ids.content) }) {
@@ -18,7 +19,7 @@ fun VolunteerPage() {
                 StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageBloodHunt, StyleCSS.BackgroundImageCenter, StyleCSS.AlignCenter,
                 StyleCSS.JustifySpaceAround,
             ) }) {
-                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                     H2 {
                         Text(Strings.volunteer_one_title)
                     }
@@ -42,7 +43,7 @@ fun VolunteerPage() {
                 StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageReadyOrNot, StyleCSS.BackgroundImageLeft, StyleCSS.AlignCenter,
                 StyleCSS.JustifySpaceAround, StyleCSS.SectionAlignEnd
             ) }) {
-                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                     H2 {
                         Text(Strings.volunteer_two_title)
                     }
@@ -56,7 +57,7 @@ fun VolunteerPage() {
                 StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageOverwatchHeroes2, StyleCSS.BackgroundImageRight, StyleCSS.AlignCenter,
                 StyleCSS.JustifySpaceAround
             ) }) {
-                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                     H2 {
                         Text(Strings.volunteer_three_title)
                     }
@@ -79,7 +80,7 @@ fun VolunteerPage() {
                 StyleCSS.Section, StyleCSS.ImageNewWorld, StyleCSS.BackgroundImageLeft, StyleCSS.AlignCenter, StyleCSS.JustifySpaceAround,
                 StyleCSS.SectionAlignEnd
             ) }) {
-                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                     H2 {
                         Text(Strings.volunteer_four_title)
                     }

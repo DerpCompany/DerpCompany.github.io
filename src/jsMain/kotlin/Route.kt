@@ -51,7 +51,7 @@ fun route(
 fun RouteBuilder.route(
     path: String,
     content: @Composable () -> Unit,
-    children: RouteBuilder.() -> Unit,
+    children: RouteBuilder.() -> Unit = {},
 ) {
     val childRoute = this.copy(
         path = "${this.path}/$path"

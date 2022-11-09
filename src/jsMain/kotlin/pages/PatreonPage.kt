@@ -7,10 +7,11 @@ import androidx.compose.runtime.Composable
 import data.Ids
 import org.jetbrains.compose.web.dom.*
 import style.StyleCSS
+import org.jetbrains.compose.web.css.Style
 
 @Composable
 fun PatreonPage() {
-    org.jetbrains.compose.web.css.Style(StyleCSS)
+    Style(StyleCSS)
     Header()
     Div(attrs = { id(Ids.container) }) {
         Div(attrs = { id(Ids.content) }) {
@@ -18,7 +19,7 @@ fun PatreonPage() {
                 StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageDestiny, StyleCSS.BackgroundImageCenter, StyleCSS.AlignCenter,
                 StyleCSS.JustifySpaceAround,
             ) }) {
-                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                     H2 {
                         Text(Strings.patreon_one_title)
                     }
@@ -38,7 +39,7 @@ fun PatreonPage() {
                 StyleCSS.Section, StyleCSS.BorderBottom, StyleCSS.ImageSeaOfThieves, StyleCSS.BackgroundImageLeft, StyleCSS.AlignCenter,
                 StyleCSS.JustifyCenter, StyleCSS.SectionAlignEnd
             ) }) {
-                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnHalf, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                     H2 {
                         Text(Strings.patreon_two_title)
                     }
@@ -52,7 +53,7 @@ fun PatreonPage() {
                 StyleCSS.Section, StyleCSS.ImageHowHelping, StyleCSS.BackgroundImageRight, StyleCSS.AlignCenter,
                 StyleCSS.JustifyCenter
             ) }) {
-                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.tintDark, StyleCSS.shadow) }) {
+                Div(attrs = { classes(StyleCSS.SectionColumnMain, StyleCSS.TintDark, StyleCSS.Shadow) }) {
                     H2 {
                         Text(Strings.patreon_three_title)
                     }

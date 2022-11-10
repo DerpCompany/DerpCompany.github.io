@@ -654,15 +654,15 @@ object StyleCSS : StyleSheet() {
     }
 
     val ImageSeaOfThieves by style {
-        backgroundImage("url('/public/img/seaofthieves_bg2.webp')")
+        backgroundImage("url('/public/img/seaofthieves_bg.webp')")
     }
 
     val ImageHowHelping by style {
-        backgroundImage("url('/public/img/how_helping.webp')")
+        backgroundImage("url('/public/img/cyberpunk.webp')")
     }
 
     val ImageSeasonalEvents1 by style {
-        backgroundImage("url('/public/img/seasonalEvents1.webp')")
+        backgroundImage("url('/public/img/overcooked2.webp')")
     }
 
     val ImageHalo by style {
@@ -710,7 +710,7 @@ object StyleCSS : StyleSheet() {
     }
 
     val ImageF1Club by style {
-        backgroundImage("url('/public/img/f1_bg3.webp')")
+        backgroundImage("url('/public/img/f1club_bg.webp')")
     }
 
     val ImageTeemill by style {

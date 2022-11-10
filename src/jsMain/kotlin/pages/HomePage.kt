@@ -20,6 +20,9 @@ fun HomePage() {
         }) {
             Video(attrs = {
                 id(Ids.backgroundVideo)
+                attr("autoplay", "")
+                attr("muted", "")
+                attr("loop", "")
             }) {
                 Source(attrs = {
                     attr("src", "/public/video/banner-video.mp4")

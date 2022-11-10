@@ -37,6 +37,7 @@ fun route(
             renderComposable(rootElementId = "contentRoot") {
                 content()
             }
+            return
         } else {
             routeBuilder.children()
         }

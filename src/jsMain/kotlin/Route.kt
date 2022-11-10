@@ -40,11 +40,12 @@ fun route(
         } else {
             routeBuilder.children()
         }
-    } catch (pageFound: PageFoundException) {
-    } catch (pageNotFound: PageNotFoundException) {
+        console.log("Page not found. Falling back to 404")
         renderComposable(rootElementId = "contentRoot") {
             pageNotFoundContent()
         }
+    } catch (pageFound: PageFoundException) {
+        console.log("Page found!")
     }
 }
 

@@ -12,5 +12,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = "DerpSiteCompose"
+rootProject.name = "DerpSite"
 

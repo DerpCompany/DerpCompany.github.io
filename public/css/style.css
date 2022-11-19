@@ -1,0 +1,419 @@
+/* Define font sizes */
+
+p {
+  font-size: var(--font-size-medium);
+}
+
+h1 {
+  font-size: var(--font-size-xxlarge);
+}
+
+h2 {
+  font-size: var(--font-size-xlarge);
+}
+
+h3 {
+  font-size: var(--font-size-large);
+}
+
+h4 {
+  font-size: var(--font-size-medium);
+}
+
+h5 {
+  font-size: var(--font-size-small);
+}
+
+h6 {
+  font-size: var(--font-size-xsmall);
+}
+
+/* Define styles */
+
+@font-face {
+  font-family: 'myriad';
+  src:  url('/public/fonts/myriad_pro_regular.ttf');
+}
+
+html {
+  background-color: #17161a;
+  font-family: "myriad";
+  color: var(--color-text);
+  background-image: url("https://derpcompany.github.io/assets/web/backgrounds/background.png");
+  background-repeat: repeat;
+}
+
+a {
+  color: var(--color-highlight);
+}
+
+button {
+  font-family : inherit;
+  font-size: var(--font-size-small);
+}
+
+.pagesLink {
+  border-style: none;
+  background-color: var(--color-transparet);
+}
+
+.pagesLink a {
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.pagesLink a:hover {
+  color: var(--color-highlight);
+}
+
+/* Breakout width is 960. We are using 980 to account for 20px of scrollbar width. */
+@media screen and (max-width: 980px) { 
+  .pagesLink h3 {
+    font-size: var(--font-size-medium);
+  }
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: var(--border-xsmall) solid var(--color-highlight);
+  background-color: transparent;
+}
+
+footer {
+  border-top: var(--border-xsmall) solid var(--color-highlight);
+  background-color: var(--color-background);
+}
+
+.navButton {
+  background-color: var(--color-highlight-variant);
+  border: var(--border-small) solid var(--color-highlight);
+}
+
+.navButton a {
+  transition: all 0.2s ease;
+  letter-spacing: var(--border-small);
+  font-size: var(--font-size-small) !important;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-highlight);
+}
+
+.navButton a:hover {
+  color: var(--color-text);
+  background-color: var(--color-highlight);
+}
+
+.navButtonInverted {
+  background-color: var(--color-highlight);
+  border: var(--border-small) solid var(--color-highlight);
+}
+
+.navButtonInverted a {
+  color: var(--color-text);
+}
+
+.navButtonInverted a:hover {
+  color: var(--color-highlight);
+  background-color: var(--color-highlight-variant);
+}
+
+.sectionBorderTop {
+  border-top: var(--border-xsmall) solid var(--color-highlight);
+}
+
+.sectionBorderBottom {
+  border-bottom: var(--border-xsmall) solid var(--color-highlight);
+}
+
+.triButton {
+  border-style: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.triButton a {
+  transition: all 0.2s ease;
+  letter-spacing: var(--border-small);
+  font-size: var(--font-size-large);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Breakout width is 960. We are using 980 to account for 20px of scrollbar width. */
+@media screen and (max-width: 980px) {
+  .triButton a {
+    font-size: var(--font-size-small);
+  }
+}
+
+.triButtonHighlight1 a:hover {
+  background-color: var(--color-highlight-tributton-1);
+}
+
+.triButtonHighlight2 a:hover {
+  background-color: var(--color-highlight-tributton-2);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sectionGameRow::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sectionGameRow {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sectionGameInnerRow::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sectionGameInnerRow {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.gameCatalogItem {
+  transition: all 0.2s ease;
+  -webkit-mask-image: url(/public/img/carousell-mask.png);
+  mask-image: url(/public/img/carousell-mask.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+
+.gameCatalogItem:hover {
+  transform: scale(1.15);
+}
+
+.tintDark {
+  background-color: rgba(0,0,0,.30); /* Tint color */
+  background-blend-mode: multiply;
+}
+
+.tintVeryDark {
+  background-color: rgba(0,0,0,.60); /* Tint color */
+  background-blend-mode: multiply;
+}
+
+.shadow {
+  box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.3);
+  border-radius: 25px;
+}
+
+.tintLightDark {
+  background-color: rgba(0,0,0,.1); /* Tint color */
+  background-blend-mode: multiply;
+}
+
+.lightShadow {
+  box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.1);
+  border-radius: 25px;
+}
+
+
+/* Breakout width is 960. We are using 980 to account for 20px of scrollbar width. */
+@media screen and (max-width: 980px) {
+  .tintDark {
+    background-color: rgba(0,0,0,.40); /* Tint color */
+    background-blend-mode: multiply;
+  }
+  
+  .tintVeryDark {
+    background-color: rgba(0,0,0,.70); /* Tint color */
+    background-blend-mode: multiply;
+  }
+  
+  .shadow {
+    box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.4);
+    border-radius: 25px;
+  }
+  
+}
+
+.backgroundImageTop {
+  background-position: top;
+}
+
+.backgroundImageCenter {
+  background-position: center;
+  background-size: cover;
+}
+
+.backgroundImageLeft {
+  background-position: left;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.backgroundImageLeftNotch {
+  background-position: -300px;
+}
+
+/* Breakout width is 960. We are using 980 to account for 20px of scrollbar width. */
+@media screen and (max-width: 980px) {
+  .backgroundImageLeft {
+    background-position: center;
+    background-size: cover;  
+  }
+
+  .backgroundImageLeftNotch {
+    background-position: center;
+    background-size: cover; 
+  }
+}
+
+.backgroundImageRight {
+  background-position: right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.backgroundImageRightNotch {
+  background-position: right -300px top 0px;
+}
+
+/* Breakout width is 960. We are using 980 to account for 20px of scrollbar width. */
+@media screen and (max-width: 980px) {
+  .backgroundImageRight {
+    background-position: center;
+    background-size: cover;  
+  }
+  .backgroundImageRightNotch {
+    background-position: center;
+    background-size: cover;  
+  }
+}
+
+.backgroundGame1 {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/valheim_bg.webp');
+}
+
+.backgroundGame2 {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/planetside2_bg.webp');
+}
+
+.backgroundGame3 {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/r6siege_bg.webp');
+}
+
+.backgroundGame4 {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/destiny2_bg.webp'); 
+}
+
+.backgroundGame5 {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/vtm_bloodhunt_bg.webp'); 
+}
+
+.backgroundGame6 {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/readyornot_bg.webp'); 
+}
+
+.backgroundGame7 {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/overwatch2_bg.webp'); 
+}
+
+.backgroundGame8 {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/newworld_bg.webp'); 
+}
+
+.backgroundGame9 {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/seaofthieves_bg.webp'); 
+}
+
+.backgroundGame10 {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/cyberpunk2077_bg.webp'); 
+}
+
+.backgroundGameSeasonalEvents {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/overcooked2_bg.webp'); 
+}
+
+.backgroundGameHalo {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/halo_infinite_bg.webp'); 
+}
+
+.backgroundGamePartyAnimals {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/partyanimals_bg.webp'); 
+}
+
+.backgroundGameDBD {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/deadbydaylight_bg.webp'); 
+}
+
+.backgroundGameDerpmas {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/overwatch_derpmas_bg.webp'); 
+}
+
+.backgroundSustainability {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/tomb_raider_bg.webp'); 
+}
+
+.backgroundRules {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/rules_bg.webp'); 
+}
+
+.backgroundJoin {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/join_bg.webp'); 
+}
+
+.backgroundMoreThanGaming{
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/more_than_gaming_bg.webp'); 
+}
+
+.backgroundAnimeClub {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/animeclub_bg.webp'); 
+}
+
+.backgroundFilmClub {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/filmclub_bg.webp'); 
+}
+
+.backgroundBookClub {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/bookclub_bg.webp'); 
+}
+
+.backgroundF1Club {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/f1club_bg.webp'); 
+}
+
+.backgroundSustainabilityTeemill {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/whyteemill_bg.webp'); 
+}
+
+.backgroundSustainabilityMerch {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/merch_shop_bg.webp'); 
+}
+
+.backgroundDiscord {
+  background-image: url('https://derpcompany.github.io/assets/web/backgrounds/join_discord_bg.webp'); 
+}
+
+.triButtonBackground1 {
+  background-color: #00F0FF;
+}
+
+.triButtonBackground1 a {
+  color: black;
+}
+
+.triButtonBackground2 {
+  background-color: #5A12F2;
+}
+
+.triButtonBackground2 a {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}

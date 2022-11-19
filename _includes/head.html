@@ -1,0 +1,19 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if page.title %}
+      {{ page.title | escape }}
+    {% else %}
+      {{ site.title | escape }}
+    {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/constants.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/layout.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.css">
+
+  <!-- Icons -->
+  <link rel="icon" href="{{ site.baseurl }}/public/img/favicon.ico">
+</head>

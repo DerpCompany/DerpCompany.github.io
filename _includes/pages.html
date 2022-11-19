@@ -1,0 +1,33 @@
+<button class="pagesLink">
+  <h3>
+    <a href="{{ site.baseurl }}/">HOME</a>
+  </h3>
+</button>
+</button>
+{% assign pages_list = (site.pages | sort: 'index') %}
+{% for node in pages_list %}
+  {% if node.index >= 100 %}
+    {% continue %}
+  {% endif %}  
+  {% if node.title != null %}
+    {% if node.title == "Home" %}
+      {% continue %}
+    {% endif %}
+    {% if node.layout == "page" %}
+      <button class="pagesLink">
+        <h3>
+          <a href="{{ site.baseurl }}{{ node.url }}">
+            {{ node.title | upcase }}
+          </a>
+        </h3>
+      </button>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+<button class="pagesLink">
+  <h3>
+    <a href="https://derpcompany.teemill.com/" target="_blank" rel="noopener noreferrer">
+      {{ site.data.strings["shop"] }}
+    </a>
+  </h3>
+</button>

@@ -3,7 +3,6 @@
     <a href="{{ site.baseurl }}/">HOME</a>
   </h3>
 </button>
-</button>
 {% assign pages_list = (site.pages | sort: 'index') %}
 {% for node in pages_list %}
   {% if node.index >= 100 %}
@@ -28,6 +27,13 @@
   <h3>
     <a href="https://derpcompany.teemill.com/" target="_blank" rel="noopener noreferrer">
       {{ site.data.strings["shop"] }}
+    </a>
+  </h3>
+</button>
+<button class="pagesLink">
+  <h3>
+    <a href="{{ site.baseurl }}/join/" target="_blank" rel="noopener noreferrer">
+      {{ site.data.strings["join"] }}
     </a>
   </h3>
 </button>

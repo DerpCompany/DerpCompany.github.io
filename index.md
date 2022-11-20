@@ -3,7 +3,7 @@ layout: home
 ---
 
 <div>
-  <div id="backgroundVideoContainer">
+  <div id="backgroundVideoContainer" class="sectionBorderBottom">
     <video autoplay muted loop id="backgroundVideo">
       <source src="https://derpcompany.github.io/assets/web/videos/front_page_video.mp4" type="video/mp4">
     </video>

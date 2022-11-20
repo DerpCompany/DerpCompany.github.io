@@ -195,8 +195,13 @@ footer {
   transform: scale(1.15);
 }
 
+.tintLightDark {
+  background-color: rgba(0,0,0,.1); /* Tint color */
+  background-blend-mode: multiply;
+}
+
 .tintDark {
-  background-color: rgba(0,0,0,.30); /* Tint color */
+  background-color: rgba(0,0,0,.20); /* Tint color */
   background-blend-mode: multiply;
 }
 
@@ -205,21 +210,15 @@ footer {
   background-blend-mode: multiply;
 }
 
-.shadow {
-  box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.3);
-  border-radius: 25px;
-}
-
-.tintLightDark {
-  background-color: rgba(0,0,0,.1); /* Tint color */
-  background-blend-mode: multiply;
-}
-
 .lightShadow {
   box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.1);
   border-radius: 25px;
 }
 
+.shadow {
+  box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.20);
+  border-radius: 25px;
+}
 
 /* Breakout width is 960. We are using 980 to account for 20px of scrollbar width. */
 @media screen and (max-width: 980px) {

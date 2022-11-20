@@ -4,6 +4,7 @@ events: Events
 social_grups: Social Groups
 something_for_everyone: Something For Everyone
 join_discord: JOIN DISCORD
+join: JOIN
 shop: SHOP
 
 # Home Page
@@ -45,7 +46,7 @@ patreon_one_action: PATREON
 
 patreon_two_title: Get The Most From Derp
 patreon_two_description: Here are some of the perks for becoming a Patreon of Derp Company:<br><br>
-    •  Access to our Supporter Lounge 
+    •  Access to our Supporter Lounge<br><br>
     •  Your name at the top of our member list<br><br>
     •  Supporter Newsletter; know what's being funded<br><br>
     •  Exclusive Giveaways; games and merch<br><br>

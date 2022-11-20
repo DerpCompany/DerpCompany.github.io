@@ -2,7 +2,7 @@
 layout: page
 title: Join
 permalink: /join/
-index: 100
+index: 1
 ---
 
 <div class="backgroundJoin backgroundImageCenter tintDark">

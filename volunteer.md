@@ -2,7 +2,7 @@
 layout: page
 title: Volunteer
 permalink: /volunteer/
-index: 1
+index: 10
 ---
 
 <div class="section sectionBorderBottom backgroundGame5 backgroundImageCenter alignCenter sectionAlignStart justifySpaceAround">

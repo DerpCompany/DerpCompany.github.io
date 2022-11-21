@@ -33,7 +33,7 @@ layout: home
         <p class="bold">{{ site.data.strings["section_one_description"] }}</p>
         <div class="flexAlignStart">
           <button class="navButton">
-            <a href="http://discord.derpcompany.com/">{{ site.data.strings["section_one_action"] }} »</a>
+            <a href="https://discord.gg/derpcompany">{{ site.data.strings["section_one_action"] }} »</a>
           </button>
         </div>
       </div>
@@ -67,7 +67,7 @@ layout: home
       </div>
       <div class="sectionColumnSub">
         <button class="navButton navButtonInverted">
-          <a href="http://discord.derpcompany.com/">{{ site.data.strings["join_discord"] }} »</a>
+          <a href="https://discord.gg/derpcompany">{{ site.data.strings["join_discord"] }} »</a>
         </button>
       </div>
     </div>

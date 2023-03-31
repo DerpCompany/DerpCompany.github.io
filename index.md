@@ -5,7 +5,7 @@ layout: home
 <div>
   <div id="backgroundVideoContainer" class="sectionBorderBottom">
     <video autoplay muted loop id="backgroundVideo">
-      <source src="https://derpcompany.github.io/assets/web/videos/front_page_video.mp4" type="video/mp4">
+      <source src="https://drive.google.com/uc?export=view&id=1LCr0FLJtdYCMs_64qaBCXbdwFWx3Bauj" type="video/mp4">
     </video>
     <div id="videoHeader">
     </div>

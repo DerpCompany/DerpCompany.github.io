@@ -5,7 +5,7 @@ layout: home
 <div>
   <div id="backgroundVideoContainer" class="sectionBorderBottom">
     <video autoplay muted loop id="backgroundVideo">
-      <source src="https://drive.google.com/file/d/1hsDhZ5VzDH5EgJC97C8L2jXL66rCtSu5/preview" type="video/mp4">
+      <source src="https://drive.google.com/uc?export=view&id=1hsDhZ5VzDH5EgJC97C8L2jXL66rCtSu5" type="video/mp4">
     </video>
     <div id="videoHeader">
     </div>
